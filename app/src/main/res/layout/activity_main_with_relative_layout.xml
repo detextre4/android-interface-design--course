@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/red"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivLoginLogo"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:layout_below="@id/ivLoginLogo"
+            android:id="@+id/tvMainTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textColor="@android:color/white"
+            tools:background="@color/black"
+            tools:text="solo para desarrollo"
+            android:text="@string/platzi_music" />
+
+        <EditText
+            android:id="@+id/etLoginUsername"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/tvMainTitle"
+            android:layout_margin="12dp"
+            android:drawablePadding="12dp"
+            android:drawableStart="@drawable/vector_person"
+            android:hint="@string/hint_user"
+            android:textSize="20sp"
+            android:textColorHint="@android:color/white"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" />
+
+        <EditText
+            android:layout_below="@id/etLoginUsername"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="12dp"
+            android:drawablePadding="12dp"
+            android:drawableStart="@drawable/vector_lock"
+            android:hint="@string/hint_password"
+            android:textSize="20sp"
+            android:textColorHint="@android:color/white"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" />
+
+        <Button
+            android:layout_alignParentBottom="true"
+            android:layout_margin="12dp"
+            android:text="LOGIN"
+            android:background="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+
+    </RelativeLayout>
